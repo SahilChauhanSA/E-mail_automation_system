@@ -48,7 +48,7 @@ def sendn_bulk_emails():
     failure_count = 0
 
     try:
-        with open(r"D:\Drashti\E-mail Automation system\recipients.csv", newline='') as file:
+        with open(r"recipients.csv", newline='') as file:
             reader = csv.DictReader(file)
 
             for row in reader:
